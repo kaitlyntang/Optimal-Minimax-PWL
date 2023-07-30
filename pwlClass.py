@@ -478,7 +478,7 @@ def knot_errscale(knot, err, xmin, xmax):
     # Scales knots into [xmin,xmax] range with spacing inversely proportional to errors
     errmean = err.mean()
     scale = (err[1:] + err[:-1] + 0.01 * errmean) / (2.01 * errmean) # in case 0 error don't perfectly scale
-    dx = (knot[1:] - knot[:-1]) / scale
+    dx = (knot[1:] - knot[:-1]) / (scale**0.5)
     knot0 = np.append(knot[0], knot[0] + np.cumsum(dx))
     knot0 = knot_rescale(knot0, xmin, xmax)
     return knot0
