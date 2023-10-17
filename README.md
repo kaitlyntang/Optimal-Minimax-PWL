@@ -1,4 +1,3 @@
 # Optimal-Minimax-PWL
-This is a class and example file for an optimal minimax PWL algorithm using weighted metics
+This is a class and example file for an optimal minimax PWL algorithm using weighted metics. An introduction to the algorithm is attached in the notebook.
 
-The optimal minimax solution to the N segment piecewise linear approximation of convex differentiable functions where the error metric is weighted is described. The problem is formulated as a convex optimization problem for which a gradient descent recursive algorithm had been previously demonstrated. A modification of the algorithm to support the weighted error metric is presented, and the conditions for the weighting functions under which convexity remains valid is discussed. Example applications are shown, namely for the use cases where rather than approximating the function, the goal of the PWL is to approximate the function inverse or to minimize the Euclidean distance to the function, with results from the algorithm implementation and achievable error under the weighting metric.
